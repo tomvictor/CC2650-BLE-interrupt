@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="configPkg" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/pinInterrupt_pm3g.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="/Users/tomvictor/workspace_v6_2/pinInterrupt_CC2650_LAUNCHXL_GNU_CC2650F128/pinInterrupt.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/pinInterrupt_pm3g.mak" src="package.bld"/>
+        <srcFile name="package/cfg/pinInterrupt_pm3g.om3g.dep" src="package/cfg/pinInterrupt_pm3g.c"/>
+        <srcFile name="package/cfg/pinInterrupt_pm3g.dep" src="package/cfg/pinInterrupt_pm3g.cfg"/>
+        <srcFile name="package/cfg/pinInterrupt.xm3g.mak" src="package.bld"/>
+        <srcFile name="package/rel/configPkg.tar.dep" src="package/rel/configPkg.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="gnu.targets.arm.M3"
+            version="gnu.targets.arm.M3{1,0,4.9,3"
+            rawVersion="4.9.3"
+            platform="ti.platforms.tiva:TM4C1294NCPDT"
+            isa="v7M"
+            suffix="m3g"
+            rootDir="/Applications/ti/ccsv6/tools/compiler/gcc-arm-none-eabi-4_9-2015q3"
+            os="undefined"
+            rts="gnu.targets.arm.rtsv7M">
+            <model endian="little"
+                codeModel="thumb2"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="pinInterrupt"
+        pname="pinInterrupt.pm3g"
+        target="gnu.targets.arm.M3"
+        platform="ti.platforms.simplelink:CC2650F128"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/pinInterrupt_pm3g.cfg"
+        xCfgPrefix="package/cfg/pinInterrupt_pm3g"
+        cfgScript="/Users/tomvictor/workspace_v6_2/pinInterrupt_CC2650_LAUNCHXL_GNU_CC2650F128/pinInterrupt.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="pinInterrupt"
+        pname="pinInterrupt.xm3g"
+        target="gnu.targets.arm.M3"
+        platform="ti.platforms.simplelink:CC2650F128"
+        profile="release"
+        xCfgScript="package/cfg/pinInterrupt_pm3g.cfg"
+        xCfgPrefix="package/cfg/pinInterrupt_pm3g"
+        cfgScript="/Users/tomvictor/workspace_v6_2/pinInterrupt_CC2650_LAUNCHXL_GNU_CC2650F128/pinInterrupt.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="pinInterrupt.xm3g"
+        args=""
+        groupName="pinInterrupt.xm3g"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="configPkg"
+        pname="configPkg.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

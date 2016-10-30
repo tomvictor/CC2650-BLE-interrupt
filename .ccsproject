@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVersion value="6.2.0"/>
+	<deviceVariant value="Cortex M.CC2650F128"/>
+	<deviceFamily value="TMS470"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="GNU_4.9.3:Linaro"/>
+	<isElfFormat value="true"/>
+	<rts value=""/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=com_ti_rtsc_tirtoscc13XX_CC26XX_example_278.projectspec.pinInterrupt_CC2650_LAUNCHXL_GNU_CC2650F128,type=rtsc,products=com.ti.rtsc.TIRTOSCC13XX_CC26XX,xdcToolsVersion=3_32_00_06_core,target=gnu.targets.arm.M3,platform=ti.platforms.simplelink:CC2650F128,buildProfile=release,isHybrid=true,configuroOptions= --compileOptions &quot;${COMPILER_FLAGS} &quot;,"/>
+	<origin value="/Users/tomvictor/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/resources/cc2650LaunchPad/driverExamples/gnuDriverExamples/pinExamples/com_ti_rtsc_tirtoscc13XX_CC26XX_example_278.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>

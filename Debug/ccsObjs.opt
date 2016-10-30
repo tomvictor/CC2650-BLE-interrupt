@@ -1,0 +1,1 @@
+"./CC2650_LAUNCHXL.o" "./ccfg.o" "./pinInterrupt.o" -Wl,-T"../CC2650_LAUNCHXL.lds" -Wl,-T"configPkg/linker.cmd" -Wl,--start-group -l:/Users/tomvictor/ti/tirex-content/tirtos_cc13xx_cc26xx_2_21_00_06/products/cc26xxware_2_24_03_17272/driverlib/bin/gcc/driverlib.lib -lgcc -lm -lnosys -lc -Wl,--end-group 
